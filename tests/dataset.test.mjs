@@ -13,6 +13,11 @@ test("dataset products have unique identifiers and usable local images", () => {
     assert.ok(product.name && product.description && product.imageAlt);
     assert.ok(existsSync(`public/${product.image}`), product.image);
     assert.ok(existsSync(`public/${product.thumbnail}`), product.thumbnail);
+    if (product.anatomyImage)
+      assert.ok(
+        existsSync(`public/${product.anatomyImage}`),
+        product.anatomyImage,
+      );
     assert.match(product.theme.accent, hex);
     assert.match(product.theme.soft, hex);
   }

@@ -8,6 +8,10 @@ for (const name of [
   "terra-form",
   "aero-shift",
   "editorial",
+  "urban-stride-anatomy",
+  "volt-runner-anatomy",
+  "terra-form-anatomy",
+  "aero-shift-anatomy",
 ]) {
   const source = `assets/source/${name}.png`;
   const main = await sharp(source)
@@ -15,7 +19,7 @@ for (const name of [
     .webp({ quality: 82, alphaQuality: 95 })
     .toFile(`public/images/${name}.webp`);
   console.log(`${name}: ${(main.size / 1024).toFixed(1)} KB`);
-  if (name !== "editorial")
+  if (name !== "editorial" && !name.endsWith("-anatomy"))
     await sharp(source)
       .resize({ width: 480 })
       .webp({ quality: 80, alphaQuality: 90 })

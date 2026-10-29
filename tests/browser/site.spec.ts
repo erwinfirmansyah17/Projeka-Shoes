@@ -146,7 +146,9 @@ test("filters catalogue, opens details and restores keyboard focus", async ({
   ).toBeFocused();
   await page.keyboard.press("Shift+Tab");
   await expect(
-    page.getByRole("link", { name: "Lihat Informasi Kontak" }),
+    page
+      .getByRole("dialog")
+      .getByRole("button", { name: "Lihat Detail", exact: true }),
   ).toBeFocused();
   await page.keyboard.press("Tab");
   await expect(

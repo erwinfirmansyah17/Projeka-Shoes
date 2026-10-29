@@ -3,7 +3,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { company } from "../data";
 import Brand from "./Brand";
 
-export default function Navbar() {
+export default function Navbar({ onNavigate }: { onNavigate?: () => void }) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const close = (event: KeyboardEvent) => {
@@ -18,26 +18,40 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <div className="container nav-inner">
-        <Brand />
+        <Brand onNavigate={onNavigate} />
         <nav
           id="main-navigation"
           className={open ? "navigation is-open" : "navigation"}
           aria-label="Navigasi utama"
         >
           {company.navigation.map((item) => (
-            <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => {
+                setOpen(false);
+                onNavigate?.();
+              }}
+            >
               {item.label}
             </a>
           ))}
           <a
             className="mobile-contact"
             href="#kontak"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              setOpen(false);
+              onNavigate?.();
+            }}
           >
             Hubungi Toko <ArrowUpRight size={16} />
           </a>
         </nav>
-        <a href="#kontak" className="button button-outline nav-contact">
+        <a
+          href="#kontak"
+          className="button button-outline nav-contact"
+          onClick={onNavigate}
+        >
           Hubungi Toko <ArrowUpRight size={16} />
         </a>
         <button

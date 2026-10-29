@@ -1,11 +1,18 @@
 import { company } from "../data";
 
-export default function Brand({ footer = false }: { footer?: boolean }) {
+export default function Brand({
+  footer = false,
+  onNavigate,
+}: {
+  footer?: boolean;
+  onNavigate?: () => void;
+}) {
   return (
     <a
       className={`brand ${footer ? "brand-footer" : ""}`}
       href="#beranda"
       aria-label={`${company.name}, ke beranda`}
+      onClick={onNavigate}
     >
       <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
         <path

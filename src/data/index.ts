@@ -12,7 +12,16 @@ export interface Product {
   image: string;
   thumbnail: string;
   imageAlt: string;
-  theme: { accent: string; soft: string; glow: string; tone?: "light" | "dark" };
+  detailImages?: string[];
+  anatomyImage?: string;
+  materialSpecs?: { part: string; material: string; note: string }[];
+  colorway?: { name: string; color: string }[];
+  theme: {
+    accent: string;
+    soft: string;
+    glow: string;
+    tone?: "light" | "dark";
+  };
   details: string[];
   featured: boolean;
   isConcept: boolean;
@@ -31,7 +40,7 @@ export const company = companyData as Omit<typeof companyData, "contact"> & {
     openingHours: string | null;
   };
 };
-export const products: Product[] = productData;
+export const products = productData as Product[];
 // Tone describes the dominant shoe colorway, including soft pastels and dark
 // combinations. Keep it in product data so new products can choose deliberately.
 export const productTone = (product: Product): "light" | "dark" =>

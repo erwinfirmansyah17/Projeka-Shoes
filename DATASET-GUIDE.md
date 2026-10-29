@@ -47,9 +47,14 @@ Edit `src/data/products.json`. Setiap objek mewakili satu produk:
 | `image` | Path relatif terhadap `public/`, tanpa slash awal |
 | `thumbnail` | Path gambar kartu berukuran kecil |
 | `imageAlt` | Deskripsi gambar bagi pembaca layar |
+| `anatomyImage` | Gambar terpisah untuk ilustrasi lapisan; jika kosong/gagal dimuat, gambar produk digunakan |
+| `detailImages` | Array opsional tiga foto close-up. Jika kosong, halaman memakai pembesaran foto produk melalui CSS |
+| `materialSpecs` | Array `{ part, material, note }` untuk panel material, label anatomi, dan spesifikasi |
+| `colorway` | Array `{ name, color }` untuk palet warna produk |
 | `theme.accent` | Warna utama produk dalam hex enam digit |
 | `theme.soft` | Warna aksen pendamping untuk perluasan tema |
 | `theme.glow` | Warna rgba halo produk dengan opacity rendah |
+| `theme.tone` | `light` untuk sepatu terang atau `dark` untuk sepatu gelap |
 | `details` | Daftar detail yang dapat dibuktikan |
 | `featured` | `true` untuk diprioritaskan di awal hero; semua produk dapat dipilih dan menyinkronkan tema website |
 | `isConcept` | `true` untuk ilustrasi; ubah ke `false` setelah produk dan fotonya nyata |

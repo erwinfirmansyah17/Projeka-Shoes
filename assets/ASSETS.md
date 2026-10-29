@@ -1,8 +1,10 @@
 # Aset visual
 
-Lima gambar dibuat menggunakan **built-in image_gen**, sebagai ilustrasi konsep Projeka Shoes. Gambar tidak menunjukkan barang, toko, atau pelanggan yang telah dikonfirmasi. Tidak menggunakan foto produk brand lain.
+Sembilan gambar dibuat menggunakan **built-in image_gen**, sebagai ilustrasi konsep Projeka Shoes: empat sepatu, satu editorial, dan empat visual anatomi. Gambar tidak menunjukkan barang, toko, atau pelanggan yang telah dikonfirmasi. Tidak menggunakan foto produk brand lain.
 
 PNG asli disimpan di `assets/source/`. Gambar yang digunakan website berada di `public/images/` dalam WebP; masing-masing produk juga memiliki thumbnail `-480.webp`. Proses encoding melalui Sharp mempertahankan transparansi tanpa mengubah desain gambar.
+
+Visual anatomi disimpan sebagai `assets/source/{id-produk}-anatomy.png` dan `public/images/{id-produk}-anatomy.webp`. Prompt pengeditan tersedia di [ANATOMY-PROMPTS.md](ANATOMY-PROMPTS.md). Semua lapisan merupakan ilustrasi konsep, bukan dokumentasi teknik produk.
 
 ## Prompt produksi
 

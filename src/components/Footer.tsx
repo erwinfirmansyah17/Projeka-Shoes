@@ -2,23 +2,23 @@ import { ArrowUpRight } from "lucide-react";
 import { company } from "../data";
 import Brand from "./Brand";
 
-export default function Footer() {
+export default function Footer({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-main">
           <div>
-            <Brand footer />
+            <Brand footer onNavigate={onNavigate} />
             <p>Sepatu pilihan. Karakter tanpa batas.</p>
           </div>
           <nav aria-label="Navigasi footer">
             {company.navigation.map((item) => (
-              <a href={item.href} key={item.href}>
+              <a href={item.href} key={item.href} onClick={onNavigate}>
                 {item.label}
               </a>
             ))}
           </nav>
-          <a href="#beranda" className="back-top">
+          <a href="#beranda" className="back-top" onClick={onNavigate}>
             Kembali ke atas{" "}
             <span>
               <ArrowUpRight size={21} />

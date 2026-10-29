@@ -39,7 +39,8 @@ export default function Hero({
   const active = showcaseProducts.findIndex((item) => item.id === product.id);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const target = useRef(0);
+  const target = useRef(active);
+  const committedProduct = useRef(product.id);
   const request = useRef(0);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const reduced = useReducedMotion();
@@ -48,11 +49,13 @@ export default function Hero({
   const rotateY = useSpring(x, { stiffness: 90, damping: 20 });
   const rotateX = useSpring(y, { stiffness: 90, damping: 20 });
   useLayoutEffect(() => {
+    if (committedProduct.current === product.id) return;
+    committedProduct.current = product.id;
     target.current = active;
     request.current++;
     setLoading(false);
     setError(false);
-  }, [active]);
+  }, [active, product.id]);
 
   useEffect(() => {
     const timer = window.setTimeout(
@@ -80,6 +83,7 @@ export default function Hero({
     try {
       await image.decode();
       if (token === request.current) {
+        committedProduct.current = showcaseProducts[next].id;
         onThemeChange(showcaseProducts[next]);
         setLoading(false);
       }

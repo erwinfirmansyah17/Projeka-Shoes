@@ -11,6 +11,7 @@
 }
 
 .site-shell {
+  color: var(--text-primary);
   position: relative;
   isolation: isolate;
   min-height: 100dvh;
@@ -124,7 +125,26 @@
 .site-shell[data-tone="light"] .benefit p,
 .site-shell[data-tone="light"] .story-copy > p,
 .site-shell[data-tone="light"] .contact-intro > p {
-  color: var(--text-muted);
+  color: #343a43;
+}
+
+.site-shell[data-tone="light"] .section-heading .eyebrow,
+.site-shell[data-tone="light"] .section-heading > p,
+.site-shell[data-tone="light"] .contact-intro > .eyebrow,
+.site-shell[data-tone="light"] .contact-pending,
+.site-shell[data-tone="light"] .story-copy .eyebrow,
+.site-shell[data-tone="light"] .story-copy > p,
+.site-shell[data-tone="light"] .benefit p,
+.site-shell[data-tone="light"] .card-info p,
+.site-shell[data-tone="light"] .card-detail-link,
+.site-shell[data-tone="light"] .card-topline,
+.site-shell[data-tone="light"] .card-badge,
+.site-shell[data-tone="light"] .collection-count,
+.site-shell[data-tone="light"] .collection-note,
+.site-shell[data-tone="light"] .hero-footnote,
+.site-shell[data-tone="light"] .stage-caption,
+.site-shell[data-tone="light"] .hero-description {
+  color: #343a43;
 }
 
 .site-shell[data-tone="light"] .site-header {
@@ -134,7 +154,7 @@
 
 .site-shell[data-tone="light"] .filters button {
   border-color: #20242a24;
-  color: var(--text-muted);
+  color: #343a43;
 }
 
 .site-shell[data-tone="light"] .filters button:hover {
@@ -147,7 +167,7 @@
 
 .site-shell[data-tone="light"] .collection-count,
 .site-shell[data-tone="light"] .collection-note {
-  color: var(--text-muted);
+  color: #343a43;
 }
 
 .site-shell[data-tone="light"] .product-card-button:hover .card-arrow {

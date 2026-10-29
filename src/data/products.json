@@ -6,10 +6,46 @@
     "category": "Daily",
     "label": "THE EVERYDAY STATEMENT",
     "colorName": "Charcoal / Sunset",
+    "colorway": [
+      {
+        "name": "Charcoal",
+        "color": "#29292b"
+      },
+      {
+        "name": "Sunset orange",
+        "color": "#ff6f00"
+      },
+      {
+        "name": "Midsole ivory",
+        "color": "#e8e5df"
+      }
+    ],
     "description": "Pertemuan siluet urban dan aksen sunset. Urban Stride mengeksplorasi kontras mesh gelap, panel bertekstur, dan bentuk sol yang tegas untuk sebuah karakter keseharian.",
     "image": "images/urban-stride.webp",
     "thumbnail": "images/urban-stride-480.webp",
     "imageAlt": "Konsep sneaker hitam dengan aksen oranye dan sol putih, tampak tiga perempat",
+    "materialSpecs": [
+      {
+        "part": "Upper",
+        "material": "Mesh tekstil",
+        "note": "Panel sintetis berlapis sebagai aksen desain konsep."
+      },
+      {
+        "part": "Laces",
+        "material": "Tali poliester",
+        "note": "Susunan tali datar untuk tampilan urban."
+      },
+      {
+        "part": "Midsole",
+        "material": "Foam EVA",
+        "note": "Bentuk bantalan ringan, masih konsep visual."
+      },
+      {
+        "part": "Outsole",
+        "material": "Karet",
+        "note": "Pola traksi bertekstur sebagai rancangan konsep."
+      }
+    ],
     "theme": {
       "accent": "#ff6f00",
       "soft": "#ffad33",
@@ -25,7 +61,8 @@
     "isConcept": true,
     "price": null,
     "sizes": [],
-    "stockStatus": "unconfirmed"
+    "stockStatus": "unconfirmed",
+    "anatomyImage": "images/urban-stride-anatomy.webp"
   },
   {
     "id": "volt-runner",
@@ -34,10 +71,46 @@
     "category": "Sport",
     "label": "ENERGY IN EVERY DETAIL",
     "colorName": "Black / Electric Lime",
+    "colorway": [
+      {
+        "name": "Black",
+        "color": "#17191a"
+      },
+      {
+        "name": "Electric lime",
+        "color": "#bddb26"
+      },
+      {
+        "name": "Midsole charcoal",
+        "color": "#44484a"
+      }
+    ],
     "description": "Energi visual dalam kombinasi hitam dan electric lime. Volt Runner membawa inspirasi dunia running ke sebuah konsep sneaker dengan tekstur mesh dan garis yang dinamis.",
     "image": "images/volt-runner.webp",
     "thumbnail": "images/volt-runner-480.webp",
     "imageAlt": "Konsep sneaker hitam dengan lapisan dalam dan detail hijau lime",
+    "materialSpecs": [
+      {
+        "part": "Upper",
+        "material": "Mesh teknis",
+        "note": "Panel sintetis untuk aksen lime, masih konsep visual."
+      },
+      {
+        "part": "Laces",
+        "material": "Tali poliester",
+        "note": "Tali ringan untuk rancangan sepatu sport."
+      },
+      {
+        "part": "Midsole",
+        "material": "Foam EVA",
+        "note": "Bentuk bantalan responsif sebagai konsep desain."
+      },
+      {
+        "part": "Outsole",
+        "material": "Karet",
+        "note": "Zona traksi bertekstur pada rancangan konsep."
+      }
+    ],
     "theme": {
       "accent": "#bddb26",
       "soft": "#ddea89",
@@ -53,7 +126,8 @@
     "isConcept": true,
     "price": null,
     "sizes": [],
-    "stockStatus": "unconfirmed"
+    "stockStatus": "unconfirmed",
+    "anatomyImage": "images/volt-runner-anatomy.webp"
   },
   {
     "id": "terra-form",
@@ -62,10 +136,46 @@
     "category": "Casual",
     "label": "A QUIETER KIND OF BOLD",
     "colorName": "Sand / Oat",
+    "colorway": [
+      {
+        "name": "Sand",
+        "color": "#c9ab83"
+      },
+      {
+        "name": "Oat",
+        "color": "#e5d3b8"
+      },
+      {
+        "name": "Gum",
+        "color": "#9b7048"
+      }
+    ],
     "description": "Warna bumi, tekstur lembut, dan bentuk yang punya karakter. Terra Form adalah eksplorasi sneaker kasual bernuansa sand untuk inspirasi gaya yang lebih tenang.",
     "image": "images/terra-form.webp",
     "thumbnail": "images/terra-form-480.webp",
     "imageAlt": "Konsep sneaker beige dengan panel suede warna pasir dan sol krem",
+    "materialSpecs": [
+      {
+        "part": "Upper",
+        "material": "Suede sintetis & mesh",
+        "note": "Tekstur sand/oat dalam rancangan material konsep."
+      },
+      {
+        "part": "Laces",
+        "material": "Tali poliester",
+        "note": "Warna senada dengan palet oat."
+      },
+      {
+        "part": "Midsole",
+        "material": "Foam EVA",
+        "note": "Siluet sol ringan dalam konsep visual."
+      },
+      {
+        "part": "Outsole",
+        "material": "Karet",
+        "note": "Detail gum sebagai aksen rancangan konsep."
+      }
+    ],
     "theme": {
       "accent": "#c9ab83",
       "soft": "#e5d3b8",
@@ -77,7 +187,8 @@
     "isConcept": true,
     "price": null,
     "sizes": [],
-    "stockStatus": "unconfirmed"
+    "stockStatus": "unconfirmed",
+    "anatomyImage": "images/terra-form-anatomy.webp"
   },
   {
     "id": "aero-shift",
@@ -86,10 +197,46 @@
     "category": "Daily",
     "label": "FRESH PERSPECTIVE",
     "colorName": "Cloud / Ice Blue",
+    "colorway": [
+      {
+        "name": "Cloud white",
+        "color": "#f4f5f3"
+      },
+      {
+        "name": "Ice blue",
+        "color": "#6ca9ff"
+      },
+      {
+        "name": "Cool grey",
+        "color": "#aeb6c0"
+      }
+    ],
     "description": "Siluet bersih dalam palet cloud dan ice blue. Aero Shift mengeksplorasi detail biru yang segar di atas panel putih, dengan bentuk yang terinspirasi gerak sehari-hari.",
     "image": "images/aero-shift.webp",
     "thumbnail": "images/aero-shift-480.webp",
     "imageAlt": "Konsep sneaker putih dengan detail biru muda dan sol putih",
+    "materialSpecs": [
+      {
+        "part": "Upper",
+        "material": "Mesh tekstil",
+        "note": "Panel sintetis ice blue sebagai aksen konsep."
+      },
+      {
+        "part": "Laces",
+        "material": "Tali poliester",
+        "note": "Warna terang mengikuti palet cloud."
+      },
+      {
+        "part": "Midsole",
+        "material": "Foam EVA",
+        "note": "Siluet bantalan ringan dalam konsep visual."
+      },
+      {
+        "part": "Outsole",
+        "material": "Karet",
+        "note": "Detail traksi sebagai rancangan konsep."
+      }
+    ],
     "theme": {
       "accent": "#6ca9ff",
       "soft": "#b8d6ff",
@@ -105,6 +252,7 @@
     "isConcept": true,
     "price": null,
     "sizes": [],
-    "stockStatus": "unconfirmed"
+    "stockStatus": "unconfirmed",
+    "anatomyImage": "images/aero-shift-anatomy.webp"
   }
 ]

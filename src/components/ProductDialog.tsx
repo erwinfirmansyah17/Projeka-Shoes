@@ -1,14 +1,16 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type CSSProperties } from "react";
 import { ArrowUpRight, Check, X } from "lucide-react";
-import { company, type Product, whatsappUrl } from "../data";
+import { company, productTone, type Product, whatsappUrl } from "../data";
 import ProductImage from "./ProductImage";
 
 export default function ProductDialog({
   product,
   onClose,
+  onDetails,
 }: {
   product: Product;
   onClose: () => void;
+  onDetails: () => void;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const link = whatsappUrl(
@@ -30,6 +32,13 @@ export default function ProductDialog({
     <dialog
       ref={ref}
       className="product-dialog"
+      data-tone={productTone(product)}
+      style={
+        {
+          "--dialog-accent": product.theme.accent,
+          "--dialog-glow": product.theme.glow,
+        } as CSSProperties
+      }
       aria-labelledby="dialog-title"
       aria-describedby="dialog-description"
       onCancel={(event) => {
@@ -71,7 +80,7 @@ export default function ProductDialog({
         <div
           className="dialog-stage"
           style={{
-            background: `radial-gradient(ellipse, ${product.theme.glow}, transparent 75%)`,
+            background: `linear-gradient(145deg, var(--dialog-stage-end), var(--dialog-bg)), radial-gradient(ellipse, ${product.theme.glow}, transparent 75%)`,
           }}
         >
           <span className="eyebrow">
@@ -83,7 +92,7 @@ export default function ProductDialog({
           )}
         </div>
         <div className="dialog-info">
-          <span className="eyebrow" style={{ color: product.theme.accent }}>
+          <span className="eyebrow" style={{ color: "var(--dialog-accent)" }}>
             {product.category} COLLECTION
           </span>
           <h2 id="dialog-title">{product.name}</h2>
@@ -118,7 +127,7 @@ export default function ProductDialog({
                 : "Konfirmasi dengan toko"}
             </strong>
           </div>
-          {link ? (
+          {link && (
             <a
               href={link}
               target="_blank"
@@ -127,15 +136,10 @@ export default function ProductDialog({
             >
               Tanyakan Produk Ini <ArrowUpRight size={18} />
             </a>
-          ) : (
-            <a
-              href="#kontak"
-              onClick={onClose}
-              className="button button-primary"
-            >
-              Lihat Informasi Kontak <ArrowUpRight size={18} />
-            </a>
           )}
+          <button className="button button-primary" onClick={onDetails}>
+            Lihat Detail <ArrowUpRight size={18} />
+          </button>
           {product.isConcept && (
             <p className="dialog-note">
               Produk ilustratif. Spesifikasi, harga, dan ketersediaan belum

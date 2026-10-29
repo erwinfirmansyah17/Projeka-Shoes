@@ -24,9 +24,11 @@ Script memilih Node Laragon ketika `node` belum tersedia pada PATH. Tidak mengub
 ## Fitur
 
 - Hero dengan empat pilihan sepatu, tema warna seluruh website yang mengikuti pilihan, crossfade, tilt pointer, swipe, dan tombol navigasi manual. Pilihan dari katalog juga menyinkronkan produk hero; tema tetap aktif setelah dialog ditutup.
-- Background bermotif grid, mesh titik, dan garis diagonal dengan warna adaptif serta transisi halus. Latar dasar tetap gelap agar konten mudah dibaca.
+- Background bermotif grid, mesh titik, dan garis diagonal dengan warna adaptif serta transisi halus. Tone terang/gelap mengikuti `theme.tone` pada produk.
 - Perlindungan terhadap respons gambar yang terlambat: pilihan terakhir menjadi acuan. Gambar gagal dimuat tidak menggantikan produk aktif dan dapat dicoba lagi.
 - Empat produk konsep, filter kategori, dialog detail, fokus keyboard, dan dukungan Escape.
+- Tombol **Lihat Detail** di dialog membuka halaman editorial seperti referensi: panggung sepatu, panel model/material, visual anatomi, tiga close-up, dan spesifikasi. Layout desktop tiga kolom, tablet dua kolom, dan mobile satu kolom.
+- Pilihan model pada halaman detail menyinkronkan tema seluruh situs. Kontrol zoom 80–120%, sudut gambar −20° sampai 20°, reset, dan label anatomi dapat digunakan. Ini pratinjau gambar 2D; visual lapisan adalah ilustrasi AI, bukan model 3D interaktif.
 - Cerita brand, nilai toko, editorial, lokasi, kontak, dan navigasi mobile.
 - Reduced motion, skip link, label aksesibel, dan fokus terlihat.
 - Gambar WebP lokal, thumbnail terpisah, font lokal, dan aset asli tersimpan. Tidak bergantung pada CDN gambar/font saat situs berjalan.
@@ -59,7 +61,7 @@ npm run preview
 
 Jika terminal dibatasi sandbox dan tidak dapat menghentikan server anak, jalankan preview pada terminal terpisah (`npm run preview -- --port 5188`), lalu set `$env:E2E_BASE_URL = 'http://127.0.0.1:5188'` sebelum `npm run test:e2e`. Mode ini menguji server yang sudah berjalan tanpa mengelola prosesnya. Hentikan preview dengan Ctrl+C setelah selesai.
 
-Hasil verifikasi implementasi: 4 pengujian dataset dan 8 pengujian browser lulus. Cakupan browser: pemuatan aset, pergantian tema cepat, retry gambar, filter, fokus dialog, anchor, menu mobile, swipe, lebar 360–1440 px, reduced motion, serta axe pada halaman dan dialog. Build TypeScript/Vite berhasil. Performa Core Web Vitals di hosting produksi belum diukur.
+Hasil verifikasi implementasi: 4 pengujian dataset dan 12 pengujian browser lulus. Cakupan browser: pemuatan aset, pergantian tema cepat, retry gambar, filter, fokus dialog, anchor, menu mobile, swipe, zoom/sudut/reset detail, pemilihan anatomi, navigasi kembali/kontak, lebar 360–1440 px, reduced motion, serta axe pada halaman dan dialog termasuk empat tema detail. Build TypeScript/Vite berhasil. Performa Core Web Vitals di hosting produksi belum diukur.
 
 Build tersedia di `dist/`. Unggah isi direktori ini ke hosting statis atau direktori publik Laragon. Jangan membuka `index.html` menggunakan `file://` karena aplikasi menggunakan ES modules. `base: './'` mendukung hosting pada subdirektori. Deployment online belum dilakukan; proyek disiapkan di workspace lokal pengguna.
 
