@@ -229,10 +229,11 @@ a:focus-visible {
   line-height: 1;
   flex-shrink: 0;
 }
-.brand svg {
-  width: 36px;
-  height: 40px;
-  color: var(--brand-accent);
+.brand .brand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand > span {
   font-size: 23px;
@@ -1183,8 +1184,9 @@ a:focus-visible {
 .brand-footer > span {
   font-size: 21px;
 }
-.brand-footer svg {
-  width: 31px;
+.brand-footer .brand-logo {
+  width: 40px;
+  height: 40px;
 }
 .footer-main p {
   font-size: 9px;
@@ -1269,7 +1271,7 @@ a:focus-visible {
   --dialog-stage-end: #232325;
   --dialog-muted: #aeb1b8;
   --dialog-border: #ffffff18;
-  width: min(880px, calc(100% - 40px));
+  width: min(1080px, calc(100% - 48px));
   max-height: 90dvh;
   overflow: auto;
   box-shadow: 0 30px 100px #0008;
@@ -1295,7 +1297,7 @@ a:focus-visible {
 }
 .dialog-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   position: relative;
 }
 .dialog-close {
@@ -1311,9 +1313,14 @@ a:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   min-height: 430px;
-  padding: 25px;
+  padding: 76px 28px;
   overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 48%, var(--dialog-glow), transparent 70%),
+    repeating-linear-gradient(135deg, transparent 0 35px, var(--dialog-border) 35px 36px),
+    linear-gradient(145deg, var(--dialog-stage-end), var(--dialog-bg));
 }
 .dialog-stage > .eyebrow {
   position: absolute;
@@ -1323,9 +1330,11 @@ a:focus-visible {
   color: var(--dialog-muted, #a5a8b0);
 }
 .dialog-stage > img {
-  width: 120%;
-  max-width: none;
-  transform: rotate(-12deg);
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  object-fit: contain;
+  transform: rotate(-8deg);
   filter: drop-shadow(0 15px 10px #0005);
 }
 .concept-pill {
@@ -1339,7 +1348,8 @@ a:focus-visible {
   border-radius: 20px;
 }
 .dialog-info {
-  padding: 58px 34px 32px 10px;
+  min-width: 0;
+  padding: 58px 34px 32px;
 }
 .dialog-info > .eyebrow {
   font-size: 8px;
@@ -1811,8 +1821,9 @@ a:focus-visible {
   .nav-inner {
     gap: 12px;
   }
-  .brand svg {
-    width: 31px;
+  .brand .brand-logo {
+    width: 38px;
+    height: 38px;
   }
   .brand > span {
     font-size: 20px;

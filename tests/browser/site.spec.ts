@@ -67,9 +67,9 @@ test("product choices theme the whole website and its background motif", async (
     "rgb(189, 219, 38)",
   );
   await expect(page.locator(".brand").first()).toBeVisible();
-  await expect(page.locator(".brand svg").first()).toHaveCSS(
-    "color",
-    "rgb(189, 219, 38)",
+  await expect(page.locator(".brand-logo image").first()).toHaveAttribute(
+    "href",
+    /images\/brand-logo.png/,
   );
   await expect(page.locator(".lifestyle")).toHaveCSS(
     "background-color",

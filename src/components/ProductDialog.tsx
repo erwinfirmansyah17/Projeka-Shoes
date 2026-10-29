@@ -77,12 +77,7 @@ export default function ProductDialog({
         >
           <X />
         </button>
-        <div
-          className="dialog-stage"
-          style={{
-            background: `linear-gradient(145deg, var(--dialog-stage-end), var(--dialog-bg)), radial-gradient(ellipse, ${product.theme.glow}, transparent 75%)`,
-          }}
-        >
+        <div className="dialog-stage">
           <span className="eyebrow">
             {company.shortName} / {product.edition}
           </span>
