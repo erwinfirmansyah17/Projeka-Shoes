@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "contentStatus": "demo",
+  "name": "Projeka Shoes",
+  "shortName": "PROJEKA",
+  "tagline": "Move with character.",
+  "headline": ["LANGKAH", "BERANI.", "GAYA SENDIRI."],
+  "description": "Sepatu bukan sekadar pelengkap. Ia bagian dari caramu bergerak, berekspresi, dan jadi diri sendiri.",
+  "story": {
+    "eyebrow": "DI BALIK PROJEKA",
+    "title": "SETIAP LANGKAH PUNYA CERITA.",
+    "paragraphs": [
+      "Ada langkah pertama. Ada jalan yang terasa familiar. Ada juga belokan yang membawa kita ke tempat baru. Projeka berangkat dari satu gagasan: setiap perjalanan layak punya karakter.",
+      "Kami membayangkan ruang untuk menemukan sepatu yang dekat dengan keseharianmu. Dari siluet sporty hingga warna-warna tenang, koleksi ini merayakan gaya yang terasa seperti dirimu sendiri."
+    ],
+    "signature": "Your pace. Your path. Your Projeka."
+  },
+  "values": [
+    {
+      "icon": "footprints",
+      "title": "Gaya untuk keseharian",
+      "description": "Siluet yang mudah dipadukan dengan ritme dan gaya personalmu."
+    },
+    {
+      "icon": "palette",
+      "title": "Karakter dalam detail",
+      "description": "Eksplorasi tekstur, bentuk, dan warna yang berbicara tentang dirimu."
+    },
+    {
+      "icon": "compass",
+      "title": "Pilihan untuk bergerak",
+      "description": "Dari rutinitas kota sampai rencana spontan di akhir pekan."
+    },
+    {
+      "icon": "message",
+      "title": "Mulai dari percakapan",
+      "description": "Kenali pilihanmu dan tanyakan detail sebelum menentukan langkah."
+    }
+  ],
+  "contact": {
+    "whatsapp": null,
+    "email": null,
+    "instagramUrl": null,
+    "mapsUrl": null,
+    "address": null,
+    "openingHours": null
+  },
+  "navigation": [
+    { "label": "Koleksi", "href": "#koleksi" },
+    { "label": "Tentang Kami", "href": "#tentang" },
+    { "label": "Keunggulan", "href": "#keunggulan" },
+    { "label": "Lokasi", "href": "#kontak" }
+  ],
+  "demoNotice": "Pratinjau konsep — produk dan visual merupakan ilustrasi, bukan katalog penjualan."
+}

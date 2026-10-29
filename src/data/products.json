@@ -1,0 +1,110 @@
+[
+  {
+    "id": "urban-stride",
+    "name": "Urban Stride",
+    "edition": "01",
+    "category": "Daily",
+    "label": "THE EVERYDAY STATEMENT",
+    "colorName": "Charcoal / Sunset",
+    "description": "Pertemuan siluet urban dan aksen sunset. Urban Stride mengeksplorasi kontras mesh gelap, panel bertekstur, dan bentuk sol yang tegas untuk sebuah karakter keseharian.",
+    "image": "images/urban-stride.webp",
+    "thumbnail": "images/urban-stride-480.webp",
+    "imageAlt": "Konsep sneaker hitam dengan aksen oranye dan sol putih, tampak tiga perempat",
+    "theme": {
+      "accent": "#ff6f00",
+      "soft": "#ffad33",
+      "glow": "rgba(255,111,0,0.20)",
+      "tone": "dark"
+    },
+    "details": [
+      "Siluet urban",
+      "Palet charcoal & sunset",
+      "Konsep panel berlapis"
+    ],
+    "featured": true,
+    "isConcept": true,
+    "price": null,
+    "sizes": [],
+    "stockStatus": "unconfirmed"
+  },
+  {
+    "id": "volt-runner",
+    "name": "Volt Runner",
+    "edition": "02",
+    "category": "Sport",
+    "label": "ENERGY IN EVERY DETAIL",
+    "colorName": "Black / Electric Lime",
+    "description": "Energi visual dalam kombinasi hitam dan electric lime. Volt Runner membawa inspirasi dunia running ke sebuah konsep sneaker dengan tekstur mesh dan garis yang dinamis.",
+    "image": "images/volt-runner.webp",
+    "thumbnail": "images/volt-runner-480.webp",
+    "imageAlt": "Konsep sneaker hitam dengan lapisan dalam dan detail hijau lime",
+    "theme": {
+      "accent": "#bddb26",
+      "soft": "#ddea89",
+      "glow": "rgba(189,219,38,0.17)",
+      "tone": "dark"
+    },
+    "details": [
+      "Inspirasi running",
+      "Aksen electric lime",
+      "Konsep tekstur mesh"
+    ],
+    "featured": true,
+    "isConcept": true,
+    "price": null,
+    "sizes": [],
+    "stockStatus": "unconfirmed"
+  },
+  {
+    "id": "terra-form",
+    "name": "Terra Form",
+    "edition": "03",
+    "category": "Casual",
+    "label": "A QUIETER KIND OF BOLD",
+    "colorName": "Sand / Oat",
+    "description": "Warna bumi, tekstur lembut, dan bentuk yang punya karakter. Terra Form adalah eksplorasi sneaker kasual bernuansa sand untuk inspirasi gaya yang lebih tenang.",
+    "image": "images/terra-form.webp",
+    "thumbnail": "images/terra-form-480.webp",
+    "imageAlt": "Konsep sneaker beige dengan panel suede warna pasir dan sol krem",
+    "theme": {
+      "accent": "#c9ab83",
+      "soft": "#e5d3b8",
+      "glow": "rgba(201,171,131,0.19)",
+      "tone": "light"
+    },
+    "details": ["Warna bumi", "Konsep tekstur suede", "Siluet kasual berlapis"],
+    "featured": true,
+    "isConcept": true,
+    "price": null,
+    "sizes": [],
+    "stockStatus": "unconfirmed"
+  },
+  {
+    "id": "aero-shift",
+    "name": "Aero Shift",
+    "edition": "04",
+    "category": "Daily",
+    "label": "FRESH PERSPECTIVE",
+    "colorName": "Cloud / Ice Blue",
+    "description": "Siluet bersih dalam palet cloud dan ice blue. Aero Shift mengeksplorasi detail biru yang segar di atas panel putih, dengan bentuk yang terinspirasi gerak sehari-hari.",
+    "image": "images/aero-shift.webp",
+    "thumbnail": "images/aero-shift-480.webp",
+    "imageAlt": "Konsep sneaker putih dengan detail biru muda dan sol putih",
+    "theme": {
+      "accent": "#6ca9ff",
+      "soft": "#b8d6ff",
+      "glow": "rgba(108,169,255,0.17)",
+      "tone": "light"
+    },
+    "details": [
+      "Palet cloud & ice",
+      "Konsep panel bersih",
+      "Inspirasi daily wear"
+    ],
+    "featured": false,
+    "isConcept": true,
+    "price": null,
+    "sizes": [],
+    "stockStatus": "unconfirmed"
+  }
+]

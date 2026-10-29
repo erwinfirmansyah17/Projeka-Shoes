@@ -1,0 +1,10 @@
+:root {
+  color-scheme: dark;
+  --page-bg: #0e0e10;
+  --surface: #3b3f45;
+  --brand-accent: #ff6f00;
+  --brand-accent-soft: #ffad33;
+  --text-primary: #d9dde1;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
